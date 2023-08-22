@@ -1,0 +1,54 @@
+<!-- Navigation Menu
+	================================================== -->
+<a class="pa-mobile-main-logo" ><img alt="" src="assets/images/logodlm.jpg"></a>
+<header>
+    <nav  class=" navbar navbar-expand-lg navbar-dark bg-dark pa-menu  pa-navbar   bg-transparent static-top">
+        <div class="container-fluid">
+        <!-- Desktop Menu Logo -->
+        <a class="navbar-brand" ><img alt="" src="assets/images/logodlm.jpg" style="width: 80px; height: 70px; margin:10px; paddin:0px;"> </a>
+        {# <a id="icon-menu" href="#"></a> #}
+        <!-- The Menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- Regular Menu Items Start -->
+                <li class="nav-item menu-item-has-children ">
+                    <a class=" nav-link hvr-underline-from-center taille" href="{{path('app_home')}}"> <strong>À Propos</strong> </a>
+                    <ul class="pa-submenu-ul">
+                        <li class="nav-item "><a class="nav-link taille" href="{{path('app_home')}}"><strong>L'association</strong></a></li>
+                        <li class="nav-item "><a class="nav-link  taille" href="{{path('app_partenaire')}}"><strong>Nos partenaires</strong></a></li>
+                        <li class="nav-item "><a class="nav-link taille" href="{{path('app_equipe')}}"><strong>L'équipe</strong></a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center taille" href="{{path('app_action')}}" ><strong>Notre action </strong> </a>
+                </li>
+
+                <li class="nav-item menu-item-has-children ">
+                    <a class="nav-link hvr-underline-from-center taille" href="#"><strong>Projets</strong></a>
+                    <ul class=" pa-submenu-ul ">
+                        <li class="nav-item "><a class="nav-link taille" href="{{path('app_projethumanitaire')}}"><strong>Projets humanitaires</strong></a></li>
+                        <li class="nav-item "><a class="nav-link taille" href="{{path('app_actvitesportive')}}"><strong>Activités Sportives</strong></a></li>
+                        <li class="nav-item "><a class="nav-link taille" href="{{path('app_evenementculturelle')}}"><strong>Evenements Culturelles</strong></a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center taille" href="{{path('app_contact')}}"><strong>Nous Contacter</strong>  </a>
+                </li>
+
+                <li class="nav-item menu-item-has-children ">
+                    <a class="nav-link hvr-underline-from-center taille" style="color: red;" href="#"><strong>Agir</strong></a>
+                    <ul class="pa-submenu-ul">
+                        <li class="nav-item "><a class="nav-link taille" href="{{path('app_benevole')}}"><strong>Devenir Bénévole</strong></a></li>
+                        <li class="nav-item "><a class="nav-link taille" href="{{path('app_don')}}"><strong>Faire un Don</strong></a></li>
+
+                    </ul>
+                </li> 
+            </ul>
+    </nav>
+</header>

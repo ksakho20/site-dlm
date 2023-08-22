@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PartenaireController!{% endblock %}
+
+{% block body %}
+<section class="decaler">
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Nos partenaires</h1>
+                <p>
+                    "Bienvenue chez DLM (Dans La Maison)
+
+                        Nous sommes une association engagée qui œuvre pour un avenir meilleur en rassemblant des personnalités inspirantes du monde sportif, des stars mondiales et des talents musicaux prestigieux. Chez DLM, notre mission est de créer un impact positif dans la société en unissant nos forces avec des figures emblématiques qui partagent notre passion pour le changement.
+
+                        Depuis notre création, nous avons eu l'honneur de collaborer avec des athlètes reconnus tels que <mark><em> <strong>Kolo Muani</strong> </em></mark>, dont l'excellence sur les terrains de football ne fait qu'égalée par son dévouement envers des causes humanitaires.
+
+                        Nous sommes également fiers de compter parmi nos soutiens des stars planétaires, des icônes dont le rayonnement dépasse les frontières, et qui choisissent de s'engager à nos côtés pour des projets philanthropiques.
+
+                        De plus, nous entretenons des liens étroits avec des artistes talentueux, tels que <mark><em> <strong>Maes</strong> </em></mark>, dont la musique résonne dans le cœur de millions de personnes à travers le monde,</br> ainsi que le phénomène de sa génération  le  célébre rappeur <mark><em> <strong>Tiakola</strong> </em></mark>, dont les paroles engagées inspirent la jeunesse.
+                        Et que dire aussi du joker  <mark><em> <strong>Bramsito</strong> </em></mark>, dont le talent créatif est une source d'inspiration pour de nombreux fans.    
+                            Nous sommes également honorés de compter parmi nos partenaires le célèbre avocat Maître Clédor, dont le dévouement à la justice et à la défense des droits de l'homme a marqué l'histoire juridique.    
+                        
+
+                        Ensemble, nous croyons au pouvoir de l'action collective. Chaque jour, nous mettons en place des initiatives sociales, environnementales et éducatives qui ont un impact concret sur les communautés que nous soutenons.
+
+                        Joignez-vous à nous dans cette aventure inspirante, et ensemble, construisons un monde meilleur pour tous. Explorez notre site pour découvrir nos projets, nos partenaires, et les différentes façons dont vous pouvez vous impliquer.
+
+                        Merci de soutenir DLM et de contribuer à notre mission commune de faire une différence dans la vie des autres."
+                                        
+                </p>
+        </div>
+
+        <section class="pa-blog-content pa-blog-ticker" style="padding: 70px;">
+            <div class="container pa-supercontainer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="blogTickerCarousel" class="carousel slide vert" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <video controls>
+                                    <source src="{{ asset('uploads/videos/kolo.mp4') }}" type="video/mp4" style="width:100%; margin: 60px; padding:70px; border:1px solid; border-radius:10px; box-shadow: 0px 0px 10px; text-align:center; ">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p>"Kolo Muani, une force bienveillante pour DLM (Dans La Maison). Son talent sur les terrains s'allie à sa générosité pour soutenir notre cause caritative. Ensemble, nous bâtissons un avenir meilleur pour les plus vulnérables. Merci de rejoindre notre mission inspirante."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pa-blog-content pa-blog-ticker" style="padding: 70px;">
+            <div class="container pa-supercontainer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="blogTickerCarousel" class="carousel slide vert" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <video controls>
+                                    <source src="{{ asset('uploads/videos/tiako.mp4') }}" type="video/mp4" style="width:100%; margin: 60px; padding:70px; border:1px solid; border-radius:10px; box-shadow: 0px 0px 10px; text-align:center; ">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <p> 
+                            Tiakola, le talentueux rappeur français, se distingue non seulement par ses paroles percutantes et sa musicalité captivante, mais aussi par son engagement envers des causes qui lui tiennent à cœur. Parmi celles-ci, il apporte un soutien inébranlable à l'association DLM, qui signifie "Dans La Maison".
+                            Tiakola, conscient des problèmes auxquels de nombreux jeunes sont confrontés, a choisi de mettre sa notoriété et son influence au service de cette noble cause. Il se présente comme un véritable porte-parole, utilisant son art pour sensibiliser le public à la situation de ces jeunes défavorisés et promouvoir les actions de DLM.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+</section>
+{% endblock %}

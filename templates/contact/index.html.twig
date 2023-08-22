@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+
+<section class="container membre" style="padding: 100px;">
+    <h1 class="text-center text-muted " >Nous contacter</h1>
+    <div class="row">
+        <div class="col-md-5 mx-auto" style="display: flex;">
+            <!-- Partie pour l'image -->
+            <div class="col-md-12" style="flex-left: 2; height: 100%;">
+                <img src="{{ asset('assets/images/adresse.jpg') }}" alt="adresse" style="width: 90%; height: 100%;">
+            </div>
+
+            <!-- Ajout de l'espace entre l'image et le formulaire -->
+            <div  style="flex: 1; margin-left: 50px;">
+                <div style="height: 100%;width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                    {% for label,message in app.flashes %}
+                        <div class="alert  alert-{{label}}">
+                            {{message[0]}}
+                        </div>
+                    {% endfor %}
+                    {{ form(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+{% endblock %}
+
+

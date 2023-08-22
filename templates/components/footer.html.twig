@@ -1,0 +1,82 @@
+	<!-- Footer
+		================================================== -->
+
+<footer class="footer container">
+    <div class="container">
+        <div class="row">
+            <!-- Partie avec le logo -->
+            <div class="col-md-4" style="padding: 70;">
+                <img src="{{ asset('assets/images/logodlm.jpg') }}" alt="Logo DLM" style="width: 150px; height: 150px;">
+            </div>
+
+            <!-- Partie avec les informations -->
+            <div class="col-md-4" style="padding: 70;">
+                <h5>Coordonnées</h5>
+                <p>Adresse : 26 rue de la noue saulnier<br>
+                Ville : Villepinte, 93420<br>
+                Pays : France</p>
+                <p>Téléphone : 0667295820<br>
+                Email : danslamaison93420.com</p>
+            </div>
+
+            <!-- Partie avec les liens -->
+            <div class="col-md-2" style="padding: 70;">
+                <h5>Liens utiles</h5>
+                <ul>
+                    <li><a href="{{ path('app_home')}}">Accueil</a></li>
+                    <li><a href="{{ path('app_benevole')}}">Devenir Bénévole</a></li>
+                    <li><a href="{{ path('app_don')}}">Faire un don</a></li>
+                    <li><a href="{{ path('app_contact')}}">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Partie avec l'inscription -->
+            <div class="col-md-2" style="padding: 70;">
+                <h5>Inscrivez-vous</h5>
+                    <div class="row">
+                    <div class="col-md-12 mx-auto">
+                        <!-- Affichage des messages flash -->
+                        {% for label, message in app.flashes %}
+                            <div class="alert alert-{{ label }}">
+                                {{ message[0] }}
+                            </div>
+                        {% endfor %}
+
+                        <!-- Formulaire de nouveau membre -->
+                        <form action="{{ path('app_inscription') }}" method="post">
+                            {# <div class="form-group">
+                                <label>Nom</label>
+                                <input type="text" name="lastname" required>
+                            </div> #}
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" style="border-radius: 100%;background-color: blue;">je m'abonne</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Partie avec les réseaux sociaux -->
+            <div class="col-md-4" style="padding: 70;">
+                <h6>Nous suivre</h6>
+                <div class="pa-widget-inner">
+                    <div class="pa-social-section mt-3">
+                        <a class="pa-social-icons" href="https://www.facebook.com/villepintedanslamaison" target="_blank"><span class="fadeInDelay03Duration10"><i class="fa fa-facebook"></i></span></a>
+                        <a class="pa-social-icons" href="https://www.snapchat.com/dlm93420" target="_blank"><span class="fadeInDelay03Duration10"><i class="fa fa-snapchat"></i></span></a> 
+                        <a class="pa-social-icons" href="https://www.instagram.com/dlm_villepinte" target="_blank"><span class="fadeInDelay03Duration10"><i class="fa fa-instagram"></i></span></a>
+                        <a class="pa-social-icons" href="https://www.facebook.com/danslamaison93420@gmail.com" target="_blank"><span class="fadeInDelay03Duration10"><i class="fa fa-pinterest"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Partie avec le copyright -->
+            <div class="col-12 text-center my-2 pt-5 pb-4">
+                <p>Copyright © 2023 - <a href="http://www.danslamaison93420.com/" target="_blank">danslamaison93420.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>

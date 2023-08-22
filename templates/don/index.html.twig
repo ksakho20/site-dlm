@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire de Demande de Don{% endblock %}
+
+{% block body %}
+{# <h1 class="col-md-4 membre" style="padding: 90px; margin: 0 auto; text-align: center;">Formulaire de Demande de Don</h1> #}
+
+<section id="top" class="pa-hero pa-blog-hero pa-centered-section pa-image-back" style="padding: 100px; margin: 1O0px;height: 10px; width: 100%;background-image: url(assets/images/humanitaire1.jpg);">
+</section>
+
+<section class="col-md-4 membre" style="padding: 90px; margin: 0 auto; text-align: center;">
+    <h1>Vos coordonnées</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.nom) }}
+    {{ form_row(form.prenom) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.montant) }}
+    {# Ajoutez d'autres champs ici #}
+
+    {{ form_end(form) }}
+</section>
+{% endblock %}

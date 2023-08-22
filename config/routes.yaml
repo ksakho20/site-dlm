@@ -1,0 +1,62 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+
+action:
+    path: /action
+    controller: App\Controller\ActionController::index  
+
+activitesportive:
+    path: /activitesportive
+    controller: App\Controller\ActivitesportiveController::index
+
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::index 
+    
+equipe:
+    path: /equipe
+    controller: App\Controller\EquipeController::index 
+    
+evenementculturelle:
+    path: /evenementculturelle
+    controller: App\Controller\EvenementculturelleController::index 
+    
+inscription:
+    path: /inscription
+    controller: App\Controller\InscriptionController::index 
+    
+partenaire:
+    path: /partenaire
+    controller: App\Controller\PartenaireController::index 
+    
+projethumanitaire:
+    path: /projethumanitaire
+    controller: App\Controller\ProjethumanitaireController::index 
+
+    
+security:
+    path: /login
+    controller: App\Controller\SecurityController::index 
+
+confirmation_page:
+    path: /confirmation
+    controller: App\Controller\ConfirmationController::index
+
+# config/routes.yaml
+benevole:
+    path: /benevole
+    controller: App\Controller\BenevoleController::benevole
+    methods: [GET, POST]
+
+# config/routes.yaml
+# confirmation_benevole:
+#     path: /confirmation-benevole
+#     controller: App\Controller\BenevoleController::confirmationBenevole
+#     methods: [GET]
+
+

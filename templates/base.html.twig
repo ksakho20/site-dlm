@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %}
+                Welcome!
+            {% endblock %}
+        </title>
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> #}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+        <!-- Bootstrap CSS -->
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+            <!-- Fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Play:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400&family=Blinker:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+            <!-- Icon Fonts -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+            <!-- Animate.css -->
+            <link href="assets/vendor/animate/animate.min.css" rel="stylesheet">
+            <!-- Off Canvas Menu - Default Theme -->
+            <link href="assets/vendor/offcanvas-nav/hc-offcanvas-nav.css" rel="stylesheet" />
+
+            <!-- Particle Theme CSS -->
+            <link href="assets/css/particle-theme.css" rel="stylesheet">
+            <link href="assets/css/particle-colors.css" rel="stylesheet">
+            <link href="assets/css/particle-blog.css" rel="stylesheet">
+            
+        {% endblock %}
+
+    </head>
+    <body class="pa-blog pa-dark-mode">
+        {% include 'components/header.html.twig' %}
+            <main>
+                {% block body %}{% endblock %}
+            </main>
+        {% include 'components/footer.html.twig' %}
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+</body>
+
+    {% block javascripts %}
+            <!-- Vendor Scripts -->
+        
+        
+        {# <script src="assets/vendor/jquery/jquery-migrate.min.js"></script> #}
+    {# <script src="assets/vendor/offcanvas-nav/hc-offcanvas-nav.js"></script> #}
+    {# <script src="assets/vendor/parallax/parallax.min.js"></script> #}
+    {# <script src="assets/vendor/jquery/jquery.easing.min.js"></script> #}
+    {# <script src="assets/vendor/typed/typed.min.js"></script> #}
+    {# <script src="assets/vendor/wow/wow.min.js"></script> #}
+    {# <script src="assets/vendor/particles/particles.min.js"></script> #}
+    {# <script src="assets/vendor/waypoints/waypoints.min.js"></script> #}
+    {# <script src="assets/vendor/counterup/jquery.counterup.min.js"></script> #}
+    {# <script src="assets/js/particle-theme.js"></script>
+    <script src="assets/js/page-blog.js"></script> #}
+    
+
+    {% endblock %}
+</html>

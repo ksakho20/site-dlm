@@ -1,0 +1,400 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Dans la maison (DLM) </main>{% endblock %}
+
+{% block body %}
+    <!-- Pushable Content
+	================================================== -->	
+	<div class="pushable-content">
+
+
+    <!-- Hero Section
+    ================================================== -->
+    <section id="top" class="pa-hero pa-blog-hero pa-centered-section pa-image-back position-relative" style="margin-top:95px;padding: 100px;background-image: url(assets/images/equipe.jpg);">
+
+        <div class="pa-absolute-fill pa-gradient-back-v1"></div>
+
+        <div class="container pa-supercontainer text-left">
+            <div class="row pa-hero-typed-text">
+                <div class="col-12 fadeInDelay03Duration10">
+                    <div class="typed-text">
+                        <span class="animated-text-effect">
+                            <!-- <span class="typed-cursor">|</span> -->
+                        </span>
+                    </div>
+                    <h4 class="pa-h4-v1 pa-bright membre"> Bienvenue dans l'association DLM (Dans La Maison) !
+                    Nous sommes une organisation dynamique et engagée qui œuvre dans les domaines humanitaire,
+                    sportif et culturel pour unir les membres de notre communauté. 
+                    </h4> 
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Posts Ticker & Top Search
+    ================================================== -->
+    <section class="pa-blog-content pa-blog-ticker">
+        <div class="container pa-supercontainer">
+            <div class="row position-relative pa-ticker-wrapper">
+                <div class="pa-absolute-fill pa-custom-gradient pa-gradient-back-v2"></div>
+                <div class="col-12 col-lg-9">
+                    <div id="blogTickerCarousel" class="carousel slide vert" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <article class="post">
+                                    <h3 class="entry-title pa-ticker-title"><a rel="bookmark"><strong>Qui sommes nous ?</strong></a></h3>
+                                </article>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" data-target="#blogTickerCarousel" role="button" data-slide="prev" href="#">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" data-target="#blogTickerCarousel" role="button" data-slide="next" href="#">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3" style="padding: 7px;">
+
+                    <div class="widget widget_search pa-in-ticker">
+                        <div class="pa-widget-inner mb-0">
+                            <form role="search" method="get" class="search-form" action="#" autocomplete="off">
+                                <label style="position: relative;">
+                                    <span class="screen-reader-text">Recherche:</span>
+                                    <input type="search" class="search-field" placeholder="" value="" name="s">
+                                </label>
+                                <button class="pa-search-button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                <input type="submit" class="search-submit" value="">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="pa-blog-content pa-blog-ticker" style="padding: 70px;">
+        <div class="container pa-supercontainer">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div id="blogTickerCarousel" class="carousel slide vert" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <i class="fa pa-pformat-icon fa-play-circle"></i>
+
+                            <video controls class="card" style="width: 100%; height: auto;">
+                                <source src="{{ asset('uploads/videos/videopre.mp4') }}" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="padding: 0 30px;">
+                    <p>
+                        Lors d'une présentation passionnée et engagée, le Président Hamza incarne l'esprit et la vision inspirants de "Dans La Maison" (DLM). Avec éloquence, il dépeint l'association dans son ensemble, mettant en lumière les multiples facettes de son impact au sein de la communauté. Du développement sportif à l'enrichissement culturel, le Président Hamza met en avant l'engagement inébranlable de DLM envers le bien-être collectif. Sa présentation captivante révèle une organisation dévouée qui transcende les barrières, éduque, rassemble et forge des liens solides, reflétant ainsi une force motrice de changement positif au cœur du quartier.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="pa-blog-content pa-blog-main-content pa-blog-feed pa-blog-style-v3-classic">
+        <div class="container pa-supercontainer">
+            <div class="row">
+                <div class="col-12 col-md-8 col-xl-9 pa-feed-col">
+                    <!-- Articles Wrapper
+                    ================================================== -->
+                    <div class="d-flex pa-articles-wrapper">
+
+
+                        <!-- Article
+                        ================================================== -->
+                        <div class="pa-blog-article-flex-wrapper">
+                            <div class="pa-article-magazine">
+                                <article class="post type-post format-standard has-post-thumbnail hentry">
+
+                                    <div class="post-image">
+                                        <i class="fa pa-pformat-icon fa-pencil"></i>
+                                        <div class="post-image-inner">
+                                            <a>
+                                            <img src="assets/images/enfantmalade.jpg" alt="Enfant malade" class="img-fluid" style="max-height: 600px; width: 300;">                                            </a>
+                                            <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="pa-post-info">
+                                        <div class="pa-blog-feed-top-metas">
+                                            <p>A &nbsp;<a href="#"  rel="author">L'Hopital</a></p><time>2023-01-27</time>
+                                            <div class="clearfix"></div>
+                                            <div class="pa-blog-tags">
+                                                <p> <a href="#">Garde toujours le sourire, .</a>, <a href="#">car tu es une étoile</a>, <a href="#"> brillante qui illumine nos cœurs</a>, <a href="#">On t'aime</a></p>
+                                            </div>										
+                                        </div>
+
+                                        <header class="entry-header">
+                                            <h3 class="pa-h3-blog-feed-title-font entry-title"><a  rel="bookmark">L'engagement de l'Association DLM (Dans la maison) envers les enfants malades est profond et sincère. Notre mission est d'apporter un rayon de lumière et d'espoir dans la vie de ces enfants courageux qui traversent des moments difficiles. </a></h3>
+                                        </header>
+
+                                        {# <div class="post-excerpt">
+                                            <a class="moretag pa-hvr-sweep-to-right">Toute l'histoire</a>
+                                        </div> #}
+                                    </div>
+                                    
+                                </article>
+                            </div>
+                        </div>
+                    
+                        <!-- Article
+                        ================================================== -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="pa-post-info">
+                                        <p>
+                                            L'équipe de DLM (Distributeurs de Joie Magique) se rassemble pour une touchante action de générosité envers les enfants malades. Avec des cœurs remplis d'empathie et d'espoir, ils apportent des rayons de bonheur aux petits patients en offrant des cadeaux soigneusement choisis. Chaque geste est empreint de chaleur et de sollicitude, créant un moment de répit et de sourires lumineux au milieu des défis que les enfants malades traversent. À travers ces dons, DLM répand une lueur de joie qui illumine non seulement les visages des enfants, mais aussi les cœurs de tous ceux qui participent à cette action bienveillante.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="justify-content: right;">
+                                    <div class="post-image">
+                                        <div class="post-image-inner">
+                                            <a href="#">
+                                                <img src="assets/images/asso.jpg" alt="Image l'assocation" class="img-fluid">
+                                            </a>
+                                            <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
+                                            <div class="pa-post-info">
+                                                <div class="pa-blog-feed-top-metas">
+                                                    <p>Avec &nbsp;<a href="#" rel="author">Les reines du courage</a></p>
+                                                    <time>2021-07-27</time>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Article
+                        ================================================== -->
+                    <section class="pa-blog-article-flex-wrapper">    
+                        <div class="container" style="padding: 90px;">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="post-image">
+                                        <div class="post-image-inner">
+                                            <a href="#">
+                                                <img src="assets/images/cameroon.jpg" alt="Image enfant" class="img-fluid" style="height: 500px;">
+                                            </a>
+                                            <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="padding: 0 30px;">
+                                        <p >
+                                            Au cœur de l'Afrique, plus précisément au Cameroun, l'Association DLM (Dans la Maison) a orchestré une touchante action de solidarité en harmonie avec le premier jour du Ramadan. Dans un geste empreint de compassion et de générosité, les bénévoles de DLM se sont unis pour apporter réconfort et joie à un orphelinat. Guidés par l'esprit de partage et d'amour, ils ont distribué des dons essentiels et réconfortants. À travers cette action bienveillante, DLM a éclairé le cœur des jeunes âmes, leur offrant un début de Ramadan empreint de sourires radieux et d'espoir. Dans cette journée mémorable, DLM a démontré l'importance de la solidarité et a semé les graines d'une générosité qui continue à fleurir dans chaque coin du monde.
+                                        </p>
+
+                                    </div>                
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+
+                        <!-- Article
+                        ================================================== -->
+                        <div class="pa-blog-article-flex-wrapper">
+                            <div class="pa-article-magazine">
+                                <article class="post type-post format-standard has-post-thumbnail hentry">
+
+                                    <div class="pa-post-info">
+                                        
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+                    
+                        <!-- Article
+                        ================================================== -->
+                        <div class="pa-blog-article-flex-wrapper">
+                            <div class="pa-article-magazine">
+                            
+                            </div>
+                        </div>
+                        <!-- /.pa-blog-article-flex-wrapper -->
+
+
+                        <!-- Article
+                        ================================================== -->
+                        <div class="pa-blog-article-flex-wrapper">
+                            <div class="pa-article-magazine">
+                                <article class="post type-post format-audio has-post-thumbnail hentry">
+
+                                    <div class="pa-post-info">
+                                        <div class="pa-blog-feed-top-metas">
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Article
+                        ================================================== -->
+                        <div class="pa-blog-article-flex-wrapper">
+                            <div class="pa-article-magazine">
+
+                                    <div class="pa-post-info">
+                                        <div class="pa-blog-feed-top-metas">
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Article
+                        ================================================== -->
+                        <div class="pa-blog-article-flex-wrapper">
+                            <div class="pa-article-magazine">
+                                <article class="post type-post format-video has-post-thumbnail hentry">
+
+                                    <div class="pa-post-info">
+                                        <div class="pa-blog-feed-top-metas">
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Article
+                        ================================================== -->
+                        <div class="pa-blog-article-flex-wrapper">
+                            <div class="pa-article-magazine">
+                                <article class="post type-post format-audio has-post-thumbnail hentry">
+
+                                    <div class="pa-post-info">
+                                        <div class="pa-blog-feed-top-metas">
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination
+                    ================================================== -->
+                    <nav class="navigation pagination" role="navigation" aria-label="Posts">
+                        <h2 class="screen-reader-text">Posts navigation</h2>
+                        <div class="nav-links">
+                            <a class="prev page-numbers" href="#"><i class="fa fa-caret-left"></i></a>
+                            <a class="page-numbers" href="#">1</a>
+                            <span aria-current="page" class="page-numbers current">2</span>
+                            <a class="page-numbers" href="#">3</a>
+                            <a class="page-numbers" href="#">4</a>
+                            <a class="page-numbers" href="#">5</a>
+                            <a class="next page-numbers" href="#"><i class="fa fa-caret-right"></i></a>
+                        </div>
+                    </nav>
+                    <!-- /nav.pagination -->
+                    
+                </div>
+                <!-- Sidebar Column
+                ================================================== -->
+                <aside class="col-12 col-md-4 col-xl-3">
+
+
+                    <!-- Widget - Recent Stories
+                    ================================================== -->
+                    <div class="widget widget_recent_entries">
+
+                        <h6 class="widget_title">Cadeaux de noel</h6>
+                        <div class="pa-widget-inner">
+                            <ul class="pa-custom-recent-ul">
+                                <li>
+                                    <div class="pa-custom-recent-thumb-wrap">
+                                        <a href="dark-singl.e-sidebar-right.html">
+                                            <img width="120" height="77" src="assets/images/hopital1.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="pa-custom-recent-description-wrap">
+                                        <div class="pa-description-first-row">
+                                            <span class="post-date">September 27, 2019</span>
+                                        </div>
+                                        <a class="pa-custom-recent-thumb-hook" >Construction de puits partout dans le monde </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pa-custom-recent-thumb-wrap">
+                                        <a href="dark-single-sidebar-right.html">
+                                            <img width="120" height="77" src="assets/images/hopital2.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="pa-custom-recent-description-wrap">
+                                        <div class="pa-description-first-row">
+                                            <span class="post-date">September 27, 2019</span>
+                                        </div>
+                                        <a class="pa-custom-recent-thumb-hook" href="dark-single-sidebar-right.html">VR social productivity app Bigscreen raises $3M</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pa-custom-recent-thumb-wrap">
+                                        <a href="dark-single-sidebar-right.html">
+                                            <img width="120" height="77" src="assets/images/hopital3.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="pa-custom-recent-description-wrap">
+                                        <div class="pa-description-first-row">
+                                            <span class="post-date">September 27, 2019</span>
+                                        </div>
+                                        <a class="pa-custom-recent-thumb-hook" href="dark-single-sidebar-right.html">VR social productivity app Bigscreen raises $3M</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pa-custom-recent-thumb-wrap">
+                                        <a href="dark-single-sidebar-right.html">
+                                            <img width="120" height="77" src="assets/images/hopital4.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="pa-custom-recent-description-wrap">
+                                        <div class="pa-description-first-row">
+                                            <span class="post-date">September 27, 2019</span>
+                                        </div>
+                                        <a class="pa-custom-recent-thumb-hook" href="dark-single-sidebar-right.html">VR social productivity app Bigscreen raises $3M</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+
+                    <!-- Widget - Ads
+                    ================================================== -->
+                    <div class="widget pa_widget_ads">
+                        <h6 class="widget_title">Hopital</h6>
+                        <div class="pa-widget-inner">
+                        </div>
+                    </div>
+
+                    
+                </aside>
+                <!-- /Sidebar -->
+            
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container .pa-supercontainer .pa-blog -->
+
+    <!-- /.pa-blog-main-content -->
+
+
+
+</div>
+{% endblock %}
